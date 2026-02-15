@@ -1,8 +1,11 @@
-import { ArrowRight, Mail, MapPin } from "lucide-react"
+import { ArrowRight, Mail, MapPin } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contato" className="border-t border-border/50 px-6 py-24 lg:py-32">
+    <section
+      id="contato"
+      className="border-t border-border/50 px-6 py-24 lg:py-32"
+    >
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
@@ -13,7 +16,9 @@ export function Contact() {
               {"Tem um projeto em mente? Chama a gente."}
             </h2>
             <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-              {"Pode ser uma d\u00favida, um projeto novo ou s\u00f3 uma ideia. A gente responde r\u00e1pido e sem compromisso."}
+              {
+                "Pode ser uma d\u00favida, um projeto novo ou s\u00f3 uma ideia. A gente responde r\u00e1pido e sem compromisso."
+              }
             </p>
 
             <div className="mt-10 flex flex-col gap-4">
@@ -23,7 +28,9 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">{"Email"}</p>
-                  <p className="text-sm text-foreground">{"contato@state.dev"}</p>
+                  <p className="text-sm text-foreground">
+                    {"lucas@stateit.tech"}
+                  </p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -31,8 +38,12 @@ export function Contact() {
                   <MapPin className="h-4 w-4 text-accent" />
                 </div>
                 <div>
-                  <p className="text-xs text-muted-foreground">{"Onde estamos"}</p>
-                  <p className="text-sm text-foreground">{"100% remoto, baseados no Brasil"}</p>
+                  <p className="text-xs text-muted-foreground">
+                    {"Onde estamos"}
+                  </p>
+                  <p className="text-sm text-foreground">
+                    {"100% remoto, baseados no Brasil"}
+                  </p>
                 </div>
               </div>
             </div>
@@ -41,7 +52,10 @@ export function Contact() {
           <div className="rounded-lg border border-border bg-card p-8">
             <form className="flex flex-col gap-5">
               <div className="flex flex-col gap-1.5">
-                <label htmlFor="name" className="text-xs font-medium text-muted-foreground">
+                <label
+                  htmlFor="name"
+                  className="text-xs font-medium text-muted-foreground"
+                >
                   {"Nome"}
                 </label>
                 <input
@@ -52,7 +66,10 @@ export function Contact() {
                 />
               </div>
               <div className="flex flex-col gap-1.5">
-                <label htmlFor="email" className="text-xs font-medium text-muted-foreground">
+                <label
+                  htmlFor="email"
+                  className="text-xs font-medium text-muted-foreground"
+                >
                   {"Email"}
                 </label>
                 <input
@@ -63,7 +80,10 @@ export function Contact() {
                 />
               </div>
               <div className="flex flex-col gap-1.5">
-                <label htmlFor="message" className="text-xs font-medium text-muted-foreground">
+                <label
+                  htmlFor="message"
+                  className="text-xs font-medium text-muted-foreground"
+                >
                   {"Mensagem"}
                 </label>
                 <textarea
@@ -85,5 +105,5 @@ export function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

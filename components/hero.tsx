@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react";
 
 export function Hero() {
   return (
@@ -21,7 +21,9 @@ export function Hero() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-          {"A State \u00e9 uma consultoria de engenharia de software e AppSec. A gente ajuda times a construir produtos melhores \u2014 e mais seguros."}
+          {
+            "A State \u00e9 uma consultoria de tecnologia completa. Ajudamos times a construir produtos melhores, mais seguros e mais eficientes."
+          }
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -29,8 +31,7 @@ export function Hero() {
             href="#contato"
             className="group inline-flex items-center gap-2 rounded-md bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
           >
-            {"Bora conversar"}
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            {"Tem um projeto em mente ?"}
           </a>
           <a
             href="#servicos"
@@ -41,5 +42,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

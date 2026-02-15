@@ -1,24 +1,25 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
   { label: "Servi\u00e7os", href: "#servicos" },
   { label: "Como funciona", href: "#abordagem" },
   { label: "Contato", href: "#contato" },
-]
+];
 
 export function Navbar() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2">
           <span className="text-xl font-semibold tracking-tight text-foreground">
-            {"state"}<span className="text-accent">{"."}</span>
+            {"state"}
+            <span className="text-accent">{"."}</span>
           </span>
         </a>
 
@@ -39,7 +40,7 @@ export function Navbar() {
           href="#contato"
           className="hidden rounded-md bg-accent px-4 py-2 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90 md:inline-block"
         >
-          {"Chamar no papo"}
+          {"Tem um projeto em mente ?"}
         </a>
 
         <button
@@ -72,12 +73,12 @@ export function Navbar() {
                 className="block rounded-md bg-accent px-3 py-2 text-center text-sm font-medium text-accent-foreground"
                 onClick={() => setOpen(false)}
               >
-                {"Chamar no papo"}
+                {"Tem um projeto em mente ?"}
               </a>
             </li>
           </ul>
         </div>
       )}
     </header>
-  )
+  );
 }
