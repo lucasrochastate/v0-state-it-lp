@@ -29,7 +29,7 @@ export function Contact() {
                 <div>
                   <p className="text-xs text-muted-foreground">{"Email"}</p>
                   <p className="text-sm text-foreground">
-                    {"lucas@stateit.tech"}
+                    {"contato@stateit.tech"}
                   </p>
                 </div>
               </div>
