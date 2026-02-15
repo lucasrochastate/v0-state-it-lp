@@ -9,6 +9,7 @@ import {
   ChartBar,
   ChartBarIncreasingIcon,
   ChartNoAxesColumnDecreasing,
+  Shield,
 } from "lucide-react";
 
 const services = [
@@ -37,15 +38,16 @@ const services = [
       "Automa\u00e7\u00e3o com SAST, DAST e SCA direto na CI/CD. Seguran\u00e7a que roda junto com o deploy.",
   },
   {
-    icon: Database,
+    icon: ChartNoAxesColumnDecreasing,
     title: "Análise de Dados",
     description:
-      "Análise de dados para tomada de decisão. Extração, transformação e carga de dados.",
+      "Extração, transformação e modelagem de dados.	Dashboards e visualizações de dados para tomada de decisão.",
   },
   {
-    icon: ChartNoAxesColumnDecreasing,
-    title: "Ciência de Dados",
-    description: "Dashboards e visualizações de dados para tomada de decisão.",
+    icon: Shield,
+    title: "Governança de Dados",
+    description:
+      "Ajudamos na definição de papéis e responsabilidades, políticas e padrões para garantir a qualidade e segurança dos dados.",
   },
 ];
 
