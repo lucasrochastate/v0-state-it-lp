@@ -5,6 +5,7 @@ import { Services } from "@/components/services"
 import { Approach } from "@/components/approach"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import { Portfolio } from "@/components/portfolio"
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
         <Hero />
         <About />
         <Services />
+        <Portfolio />
         <Approach />
         <Contact />
       </main>
