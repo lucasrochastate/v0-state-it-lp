@@ -16,7 +16,7 @@ export function Hero() {
       <div className="relative z-10 mx-auto max-w-3xl text-center">
         <h1 className="text-balance text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl">
           {"Seu software pode ser "}
-          <span className="text-accent">{"r\u00e1pido, bonito e seguro"}</span>
+          <span className="text-accent">{"r\u00e1pido, eficiente e seguro"}</span>
           {" ao mesmo tempo."}
         </h1>
 
