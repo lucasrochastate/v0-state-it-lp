@@ -29,7 +29,10 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-8 border-t-2 border-foreground/10 pt-8 sm:flex-row">
           {/* Logo */}
-          <a href="#" className="text-sm font-bold uppercase tracking-widest text-foreground">
+          <a
+            href="#"
+            className="text-sm font-bold uppercase tracking-widest text-foreground"
+          >
             {"STATE"}
             <span className="animate-blink text-accent">{"."}</span>
           </a>
