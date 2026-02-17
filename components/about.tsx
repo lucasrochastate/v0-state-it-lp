@@ -2,35 +2,56 @@ export function About() {
   return (
     <section
       id="sobre"
-      className="border-t border-border/50 px-6 py-24 lg:py-32"
+      className="border-b-2 border-foreground/10 px-6 py-24 lg:px-10 lg:py-32"
     >
-      <div className="mx-auto max-w-6xl">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
-          <div>
-            <p className="mb-3 text-xs font-medium tracking-widest text-accent uppercase">
-              {"Quem somos"}
-            </p>
-            <h2 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              {
-                "C\u00f3digo bom \u00e9 c\u00f3digo seguro e eficiente. Simples assim."
-              }
+      <div className="mx-auto max-w-[1400px]">
+        {/* Label */}
+        <p className="mb-10 font-mono text-[11px] uppercase tracking-[0.3em] text-accent">
+          {"Sobre a State"}
+        </p>
+
+        {/* Two column */}
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
+          {/* Big statement */}
+          <div className="lg:col-span-7">
+            <h2 className="text-3xl font-bold uppercase leading-[1.15] tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+              {"A gente cansou de ver seguran\u00e7a e qualidade sendo tratadas como "}
+              <span className="text-accent">{"algo \u00e0 parte"}</span>
+              {"."}
             </h2>
           </div>
 
-          <div className="flex flex-col justify-center gap-6">
-            <p className="text-pretty leading-relaxed text-muted-foreground">
-              {"A "}
-              <span className="font-medium text-foreground">{"State"}</span>
-              {
-                " surgiu de um grupo de mentes criativas que cansaram de ver seguran\u00e7a e eficiência sendo tratadas como algo \u00e0 parte. Pra gente, n\u00e3o faz sentido entregar software sem pensar em seguran\u00e7a, eficiência e qualidade desde o come\u00e7o."
-              }
+          {/* Body text */}
+          <div className="flex flex-col justify-end gap-6 lg:col-span-5">
+            <p className="text-base leading-relaxed text-muted-foreground">
+              {"Pra gente, n\u00e3o faz sentido entregar software sem pensar em seguran\u00e7a, efici\u00eancia e qualidade desde o come\u00e7o. \u00c9 assim que a State trabalha."}
             </p>
-            <p className="text-pretty leading-relaxed text-muted-foreground">
-              {
-                "Trabalhamos lado a lado com times de produto e engenharia, ajudando de verdade \u2014 sem jarg\u00e3o corporativo, sem relat\u00f3rio que ningu\u00e9m l\u00ea. S\u00f3 trabalho bem-feito que funciona na pr\u00e1tica."
-              }
+            <p className="text-base leading-relaxed text-muted-foreground">
+              {"Trabalhamos junto com seu time, sem jarg\u00e3o corporativo, sem relat\u00f3rio que ningu\u00e9m l\u00ea. S\u00f3 trabalho que funciona na pr\u00e1tica."}
             </p>
           </div>
+        </div>
+
+        {/* Horizontal stats */}
+        <div className="mt-20 grid grid-cols-2 gap-px border-2 border-foreground/10 bg-foreground/10 sm:grid-cols-4">
+          {[
+            { number: "50+", label: "Projetos" },
+            { number: "6", label: "Especialidades" },
+            { number: "100%", label: "Remoto" },
+            { number: "24h", label: "Resposta" },
+          ].map((stat) => (
+            <div
+              key={stat.label}
+              className="bg-background px-6 py-8 transition-colors hover:bg-card"
+            >
+              <span className="font-mono text-3xl font-bold text-accent lg:text-4xl">
+                {stat.number}
+              </span>
+              <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+                {stat.label}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
