@@ -15,7 +15,9 @@ export function About() {
           {/* Big statement */}
           <div className="lg:col-span-7">
             <h2 className="text-3xl font-bold uppercase leading-[1.15] tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-              {"A gente cansou de ver seguran\u00e7a e qualidade sendo tratadas como "}
+              {
+                "A gente cansou de ver seguran\u00e7a e qualidade sendo tratadas como "
+              }
               <span className="text-accent">{"algo \u00e0 parte"}</span>
               {"."}
             </h2>
@@ -24,34 +26,16 @@ export function About() {
           {/* Body text */}
           <div className="flex flex-col justify-end gap-6 lg:col-span-5">
             <p className="text-base leading-relaxed text-muted-foreground">
-              {"Pra gente, n\u00e3o faz sentido entregar software sem pensar em seguran\u00e7a, efici\u00eancia e qualidade desde o come\u00e7o. \u00c9 assim que a State trabalha."}
+              {
+                "Pra gente, n\u00e3o faz sentido entregar software sem pensar em seguran\u00e7a, efici\u00eancia e qualidade desde o come\u00e7o. \u00c9 assim que a State trabalha."
+              }
             </p>
             <p className="text-base leading-relaxed text-muted-foreground">
-              {"Trabalhamos junto com seu time, sem jarg\u00e3o corporativo, sem relat\u00f3rio que ningu\u00e9m l\u00ea. S\u00f3 trabalho que funciona na pr\u00e1tica."}
+              {
+                "Trabalhamos junto com seu time, sem jarg\u00e3o corporativo, sem relat\u00f3rio que ningu\u00e9m l\u00ea. S\u00f3 trabalho que funciona na pr\u00e1tica."
+              }
             </p>
           </div>
-        </div>
-
-        {/* Horizontal stats */}
-        <div className="mt-20 grid grid-cols-2 gap-px border-2 border-foreground/10 bg-foreground/10 sm:grid-cols-4">
-          {[
-            { number: "50+", label: "Projetos" },
-            { number: "6", label: "Especialidades" },
-            { number: "100%", label: "Remoto" },
-            { number: "24h", label: "Resposta" },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="bg-background px-6 py-8 transition-colors hover:bg-card"
-            >
-              <span className="font-mono text-3xl font-bold text-accent lg:text-4xl">
-                {stat.number}
-              </span>
-              <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-                {stat.label}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
     </section>
