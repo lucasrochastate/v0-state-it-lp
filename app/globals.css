@@ -37,7 +37,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
+    --radius: 0px;
     --sidebar-background: 220 14% 6%;
     --sidebar-foreground: 210 11% 89%;
     --sidebar-primary: 166 72% 52%;
@@ -59,4 +59,19 @@
   html {
     scroll-behavior: smooth;
   }
+}
+
+::selection {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--accent));
 }
