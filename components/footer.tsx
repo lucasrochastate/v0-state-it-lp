@@ -62,7 +62,7 @@ export function Footer() {
               <Linkedin className="h-4 w-4" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/stateit.tech"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground transition-colors hover:text-accent"
